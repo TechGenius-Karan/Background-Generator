@@ -30,7 +30,7 @@ color2.addEventListener("input", function(){
     }
 
     // call the function when the page loads
-    
+    randomColor();
 
     function generateColor2() {
       let color3 = '#';
@@ -47,5 +47,5 @@ color2.addEventListener("input", function(){
     }
 
     // call the function when the page loads
-    
+    randomColor2();
     
