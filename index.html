@@ -9,19 +9,25 @@
 
 		<h1>Background Generator</h1>
 
- 
-
 		<input class="color1" type="color" name="color1" value="#00ff00">
 		<button id = "random-color1" onclick="generateColor()"> Random </button>
+		<p class="plain">- Red</p>
 
 		<input class="color2" type="color" name="color2" value="#ff0000">
         <button id = "random-color2" onclick="generateColor2()"> Random </button>
+        <p class="plain">- Blue</p>
 
         <h2>Current CSS Background</h2>
 
         <h3></h3>
-        <p id = "color"></p> 
+
+        <p id = "color"></p>
+        <p>- Red</p>
+
+        <p class="divider">|</p> 
+
         <p id = "color3"></p>
+        <p>- Blue</p>
 
 		<style type="text/css">
 		    body {
@@ -38,8 +44,18 @@
 		    }
 		    p {
 		    	display:inline;
+		    }
+		    .divider {
+		    	font-size:2rem;
+		    	font-weight:200%;
+		    	font-family:sans-serif;
+		    }
+		    .plain {
+		    	font-family:sans-serif;
+		    	letter-spacing:normal;
+		    	text-transform:lowercase;
 		    }	
 		</style>
 		<script type="text/javascript" src="generator.js"></script>
 		</body>
-		</html>	
+		</html>
